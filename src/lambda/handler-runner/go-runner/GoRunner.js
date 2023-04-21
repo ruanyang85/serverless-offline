@@ -128,7 +128,7 @@ export default class GoRunner {
       // Make sure we have the mock-lambda runner
       await execa('go', [
         'get',
-        'github.com/icarus-sullivan/mock-lambda@e065469',
+        'github.com/icarus-sullivan/mock-lambda@b33d704',
       ])
       await execa('go', ['build'])
     } catch {
