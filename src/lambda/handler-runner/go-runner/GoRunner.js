@@ -160,6 +160,7 @@ export default class GoRunner {
     await this.cleanup()
 
     if (stderr) {
+      chdir(this.#codeDir)
       return stderr
     }
 
